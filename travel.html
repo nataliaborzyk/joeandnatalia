@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stay & Travel · Natalia & Joe</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .hotel-badge {
+      display: inline-block;
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border: 1px solid rgba(205,217,204,0.35);
+      border-radius: 20px;
+      padding: 3px 10px;
+      margin-bottom: 12px;
+      opacity: 0.7;
+    }
+    .hotel-badge.recommended {
+      border-color: rgba(205,217,204,0.6);
+      opacity: 1;
+    }
+    .detail-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(205,217,204,0.1);
+    }
+    .detail-row span {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      opacity: 0.6;
+    }
+    .detail-row strong {
+      font-weight: 400;
+      font-size: 12px;
+      opacity: 0.9;
+      letter-spacing: 0.12em;
+      background: rgba(205,217,204,0.1);
+      padding: 3px 10px;
+      border-radius: 3px;
+    }
+    .bus-timeline {
+      margin-top: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .bus-stop {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .bus-stop-line {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .bus-dot {
+      width: 8px; height: 8px;
+      border: 1px solid rgba(205,217,204,0.5);
+      border-radius: 50%;
+      margin-top: 4px;
+    }
+    .bus-connector {
+      width: 1px;
+      height: 28px;
+      background: rgba(205,217,204,0.15);
+    }
+    .bus-stop-text { padding-bottom: 16px; }
+    .bus-stop-time {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 16px;
+      font-weight: 300;
+      font-style: italic;
+      margin-bottom: 2px;
+    }
+    .bus-stop-desc { font-size: 12px; opacity: 0.6; line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="venue.html" data-t="nav_venue">The Venue</a>
+    <a href="travel.html" data-t="nav_travel" style="opacity:1;font-weight:400;">Stay &amp; Travel</a>
+    <a href="faq.html" data-t="nav_faq">FAQ</a>
+    <a href="rsvp.html" class="nav-rsvp" data-t="nav_rsvp">RSVP</a>
+    <div class="lang-toggle">
+      <span class="lang-lbl lang-lbl-pl">PL</span>
+      <label class="toggle-wrap">
+        <input type="checkbox" class="lang-switch-input">
+        <span class="slider-track"></span>
+      </label>
+      <span class="lang-lbl lang-lbl-en">EN</span>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <div class="section-header fade-in">
+      <p class="section-eyebrow" data-t="travel_eyebrow">Noclegi i transport</p>
+      <h1 class="section-title" data-t="travel_title">Zostań z nami dłużej</h1>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="content-card">
+
+      <!-- Hotel 1 -->
+      <div class="content-block fade-in">
+        <span class="hotel-badge recommended">★ polecany</span>
+        <h3 data-t="travel_hotel1_title">Hotel Dworkowy</h3>
+        <p data-t="travel_hotel1_body">Wynegocjowaliśmy dla Was specjalną cenę...</p>
+        <div class="detail-row">
+          <span>Kod rezerwacji</span>
+          <strong>NATALIA2027</strong>
+        </div>
+      </div>
+
+      <!-- Hotel 2 -->
+      <div class="content-block fade-in">
+        <span class="hotel-badge">opcja</span>
+        <h3 data-t="travel_hotel2_title">Agroturystyka Pod Dębem</h3>
+        <p data-t="travel_hotel2_body">Urokliwe pokoje w samym sercu natury...</p>
+      </div>
+
+      <!-- Bus -->
+      <div class="content-block fade-in">
+        <h3 data-t="travel_bus_title">Autobus weselny</h3>
+        <p data-t="travel_bus_body">Organizujemy bezpłatny autobus...</p>
+        <div class="bus-timeline">
+          <div class="bus-stop">
+            <div class="bus-stop-line">
+              <div class="bus-dot"></div>
+              <div class="bus-connector"></div>
+            </div>
+            <div class="bus-stop-text">
+              <div class="bus-stop-time">13:30</div>
+              <div class="bus-stop-desc">Odjazd — Warszawa, Plac Defilad</div>
+            </div>
+          </div>
+          <div class="bus-stop">
+            <div class="bus-stop-line">
+              <div class="bus-dot"></div>
+              <div class="bus-connector"></div>
+            </div>
+            <div class="bus-stop-text">
+              <div class="bus-stop-time">~14:15</div>
+              <div class="bus-stop-desc">Przyjazd — Zaczarowana Furmanka</div>
+            </div>
+          </div>
+          <div class="bus-stop">
+            <div class="bus-stop-line">
+              <div class="bus-dot"></div>
+              <div class="bus-connector"></div>
+            </div>
+            <div class="bus-stop-text">
+              <div class="bus-stop-time">~2:00</div>
+              <div class="bus-stop-desc">Powrót kurs I — Warszawa</div>
+            </div>
+          </div>
+          <div class="bus-stop">
+            <div class="bus-stop-line">
+              <div class="bus-dot"></div>
+            </div>
+            <div class="bus-stop-text">
+              <div class="bus-stop-time">~4:00</div>
+              <div class="bus-stop-desc">Powrót kurs II — Warszawa</div>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top:20px;font-size:12px;opacity:0.55;">Zgłoś chęć skorzystania z autobusu w formularzu <a href="rsvp.html" style="color:var(--green-light);opacity:0.8;">RSVP</a>.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p data-t="footer">Natalia &amp; Joe · 18 września 2027</p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

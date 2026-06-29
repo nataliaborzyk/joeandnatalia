@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSVP · Natalia & Joe</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .rsvp-wrap {
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .rsvp-subtitle {
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      opacity: 0.5;
+      margin-top: 8px;
+      text-transform: uppercase;
+    }
+
+    /* ── PERSON CARD ── */
+    .person-card {
+      background: rgba(205,217,204,0.05);
+      border: 1px solid rgba(205,217,204,0.13);
+      border-radius: 2px;
+      padding: 28px 28px 22px;
+      margin-bottom: 14px;
+      animation: cardIn 0.35s ease both;
+    }
+
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .person-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    .person-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 300;
+      opacity: 0.6;
+    }
+
+    .btn-remove {
+      background: none;
+      border: none;
+      color: var(--green-light);
+      font-family: 'Poppins', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      cursor: pointer;
+      opacity: 0.35;
+      transition: opacity 0.2s;
+      padding: 4px 0;
+    }
+
+    .btn-remove:hover { opacity: 0.7; }
+
+    /* ── FIELDS ── */
+    .field-group { margin-bottom: 14px; }
+
+    .field-input {
+      width: 100%;
+      background: rgba(205,217,204,0.06);
+      border: 1px solid rgba(205,217,204,0.18);
+      border-radius: 2px;
+      color: var(--green-light);
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      padding: 12px 14px;
+      outline: none;
+      transition: border-color 0.25s;
+      -webkit-appearance: none;
+    }
+
+    .field-input::placeholder { opacity: 0.35; }
+    .field-input:focus { border-color: rgba(205,217,204,0.45); }
+
+    textarea.field-input { resize: vertical; min-height: 72px; }
+
+    /* ── ATTENDANCE TOGGLE ── */
+    .attend-toggle {
+      display: flex;
+      gap: 8px;
+    }
+
+    .attend-opt { display: none; }
+
+    .attend-lbl {
+      flex: 1;
+      text-align: center;
+      border: 1px solid rgba(205,217,204,0.18);
+      border-radius: 2px;
+      padding: 10px;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.25s, border-color 0.25s, opacity 0.25s;
+      opacity: 0.55;
+    }
+
+    .attend-opt:checked + .attend-lbl {
+      background: rgba(205,217,204,0.12);
+      border-color: rgba(205,217,204,0.45);
+      opacity: 1;
+    }
+
+    /* ── CHECKBOX ROW ── */
+    .check-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .check-row input[type="checkbox"] {
+      width: 16px; height: 16px;
+      border: 1px solid rgba(205,217,204,0.3);
+      background: transparent;
+      appearance: none;
+      -webkit-appearance: none;
+      border-radius: 2px;
+      cursor: pointer;
+      position: relative;
+      flex-shrink: 0;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .check-row input[type="checkbox"]:checked {
+      background: rgba(205,217,204,0.25);
+      border-color: rgba(205,217,204,0.6);
+    }
+
+    .check-row input[type="checkbox"]:checked::after {
+      content: '✓';
+      position: absolute;
+      top: -1px; left: 1px;
+      font-size: 12px;
+      color: var(--green-light);
+    }
+
+    .check-row label {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+    /* ── ADD PERSON BTN ── */
+    .btn-add {
+      width: 100%;
+      background: none;
+      border: 1px dashed rgba(205,217,204,0.2);
+      border-radius: 2px;
+      color: var(--green-light);
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 14px;
+      cursor: pointer;
+      opacity: 0.5;
+      transition: opacity 0.25s, border-color 0.25s;
+      margin-bottom: 24px;
+    }
+
+    .btn-add:hover { opacity: 0.85; border-color: rgba(205,217,204,0.35); }
+
+    /* ── GLOBAL FIELDS ── */
+    .global-section {
+      border-top: 1px solid rgba(205,217,204,0.1);
+      padding-top: 22px;
+      margin-top: 6px;
+      margin-bottom: 24px;
+    }
+
+    /* ── SUBMIT ── */
+    .btn-submit {
+      width: 100%;
+      background: rgba(205,217,204,0.1);
+      border: 1px solid rgba(205,217,204,0.3);
+      border-radius: 2px;
+      color: var(--green-light);
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      padding: 16px;
+      cursor: pointer;
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .btn-submit:hover {
+      background: rgba(205,217,204,0.18);
+      border-color: rgba(205,217,204,0.5);
+    }
+
+    /* ── MESSAGES ── */
+    .form-msg {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      line-height: 1.7;
+      display: none;
+    }
+
+    .form-msg.success { color: var(--green-light); }
+    .form-msg.error   { color: #e09090; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="venue.html" data-t="nav_venue">The Venue</a>
+    <a href="travel.html" data-t="nav_travel">Stay &amp; Travel</a>
+    <a href="faq.html" data-t="nav_faq">FAQ</a>
+    <a href="rsvp.html" class="nav-rsvp" data-t="nav_rsvp" style="border-color:rgba(205,217,204,0.6);">RSVP</a>
+    <div class="lang-toggle">
+      <span class="lang-lbl lang-lbl-pl">PL</span>
+      <label class="toggle-wrap">
+        <input type="checkbox" class="lang-switch-input">
+        <span class="slider-track"></span>
+      </label>
+      <span class="lang-lbl lang-lbl-en">EN</span>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <div class="section-header fade-in">
+      <p class="section-eyebrow" data-t="rsvp_eyebrow">Potwierdź obecność</p>
+      <h1 class="section-title" data-t="rsvp_title">Czekamy na Ciebie</h1>
+      <div class="section-divider"></div>
+      <p class="rsvp-subtitle" data-t="rsvp_subtitle">Prosimy o wypełnienie formularza do 1 maja 2027.</p>
+    </div>
+
+    <div class="rsvp-wrap fade-in">
+      <form id="rsvp-form">
+
+        <!-- Dynamic person cards injected here -->
+        <div id="persons-container"></div>
+
+        <!-- Add person button -->
+        <button type="button" class="btn-add" id="btn-add" onclick="addPerson()">
+          <span data-t="rsvp_add_person">+ Dodaj osobę</span>
+        </button>
+
+        <!-- Global fields -->
+        <div class="global-section">
+          <div class="check-row">
+            <input type="checkbox" id="bus-check" name="bus">
+            <label for="bus-check" data-t="rsvp_bus">Korzystam z autobusa weselnego</label>
+          </div>
+          <div class="field-group" style="margin-top:14px;">
+            <textarea class="field-input" name="message" rows="3"
+              data-t="rsvp_message_placeholder"
+              placeholder="Wiadomość dla Natalii i Joe (opcjonalnie)"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          <span data-t="rsvp_submit">Wyślij potwierdzenie</span>
+        </button>
+
+        <div class="form-msg success" id="msg-success" data-t="rsvp_success"></div>
+        <div class="form-msg error"   id="msg-error"   data-t="rsvp_error"></div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p data-t="footer">Natalia &amp; Joe · 18 września 2027</p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+  <script>
+    let personCount = 0;
+    const MAX_PERSONS = 8;
+
+    function addPerson(skipAnim) {
+      if (personCount >= MAX_PERSONS) return;
+      personCount++;
+      const idx = personCount;
+      const container = document.getElementById('persons-container');
+      const card = document.createElement('div');
+      card.className = 'person-card';
+      card.id = `person-${idx}`;
+      card.innerHTML = buildCard(idx);
+      container.appendChild(card);
+      updateAddBtn();
+      updatePageText();
+    }
+
+    function buildCard(idx) {
+      const lbl = `${t('rsvp_person')} ${idx}`;
+      return `
+        <div class="person-header">
+          <span class="person-label">${lbl}</span>
+          ${idx > 1 ? `<button type="button" class="btn-remove" onclick="removePerson(${idx})" data-t="rsvp_remove">${t('rsvp_remove')}</button>` : ''}
+        </div>
+
+        <div class="field-group">
+          <input class="field-input" type="text" name="person_${idx}_name"
+            placeholder="${t('rsvp_name_placeholder')}" required
+            data-ph-t="rsvp_name_placeholder">
+        </div>
+
+        <div class="field-group">
+          <div class="attend-toggle">
+            <input class="attend-opt" type="radio" name="person_${idx}_attending" id="yes_${idx}" value="yes" required>
+            <label class="attend-lbl" for="yes_${idx}" data-t-label="rsvp_attending_yes">${t('rsvp_attending_yes')}</label>
+            <input class="attend-opt" type="radio" name="person_${idx}_attending" id="no_${idx}" value="no">
+            <label class="attend-lbl" for="no_${idx}" data-t-label="rsvp_attending_no">${t('rsvp_attending_no')}</label>
+          </div>
+        </div>
+
+        <div class="check-row">
+          <input type="checkbox" id="vegan_${idx}" name="person_${idx}_vegan">
+          <label for="vegan_${idx}" data-t="rsvp_vegan">${t('rsvp_vegan')}</label>
+        </div>
+
+        <div class="field-group">
+          <input class="field-input" type="text" name="person_${idx}_allergies"
+            placeholder="${t('rsvp_allergies_placeholder')}"
+            data-ph-t="rsvp_allergies_placeholder">
+        </div>
+      `;
+    }
+
+    function removePerson(idx) {
+      const card = document.getElementById(`person-${idx}`);
+      if (card) card.remove();
+      // If we removed the last, decrement count
+      const cards = document.querySelectorAll('.person-card');
+      personCount = cards.length;
+      updateAddBtn();
+    }
+
+    function updateAddBtn() {
+      document.getElementById('btn-add').style.display =
+        personCount >= MAX_PERSONS ? 'none' : 'block';
+    }
+
+    // Build form data string for Formspree
+    async function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData();
+
+      // Collect each person
+      document.querySelectorAll('.person-card').forEach((card, i) => {
+        const num = i + 1;
+        const name       = card.querySelector(`[name$="_name"]`)?.value || '';
+        const attending  = card.querySelector(`input[type="radio"]:checked`)?.value || 'no';
+        const vegan      = card.querySelector(`input[type="checkbox"]`)?.checked ? 'tak/yes' : 'nie/no';
+        const allergies  = card.querySelector(`[name$="_allergies"]`)?.value || '—';
+        data.append(`Osoba ${num} / Person ${num}`,
+          `${name} | obecność: ${attending} | vegan: ${vegan} | alergie: ${allergies}`);
+      });
+
+      const bus     = document.getElementById('bus-check').checked ? 'tak/yes' : 'nie/no';
+      const message = form.querySelector('[name="message"]').value;
+      data.append('Autobus / Shuttle', bus);
+      if (message) data.append('Wiadomość / Message', message);
+
+      try {
+        const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.style.display = 'none';
+          const msg = document.getElementById('msg-success');
+          msg.textContent = t('rsvp_success');
+          msg.style.display = 'block';
+        } else {
+          throw new Error('server');
+        }
+      } catch {
+        const msg = document.getElementById('msg-error');
+        msg.textContent = t('rsvp_error');
+        msg.style.display = 'block';
+      }
+    }
+
+    document.getElementById('rsvp-form').addEventListener('submit', handleSubmit);
+
+    // Override updatePageText to also refresh placeholders inside cards
+    const _origUpdate = updatePageText;
+    window.updatePageText = function() {
+      _origUpdate();
+      document.querySelectorAll('[data-ph-t]').forEach(el => {
+        el.placeholder = t(el.getAttribute('data-ph-t'));
+      });
+      document.querySelectorAll('[data-t-label]').forEach(el => {
+        el.textContent = t(el.getAttribute('data-t-label'));
+      });
+    };
+
+    // Init with one person
+    addPerson(true);
+  </script>
+</body>
+</html>
