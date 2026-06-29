@@ -10,56 +10,64 @@
     .hero {
       position: relative;
       width: 100%;
-      min-height: 100svh;
+      height: 100svh;
+      min-height: 600px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
+      background: #424f38;
     }
 
+    /* Kwiatek — za imionami (z-index:1), przed tłem */
     .flower-bg {
       position: absolute;
-      right: 0%;
-      top: 5%;
-      width: 48%;
-      height: 90%;
-      opacity: 1;
+      right: -2%;
+      top: -2%;
+      width: 54%;
+      height: 105%;
       pointer-events: none;
-      filter: brightness(0);
+      z-index: 1;
+      filter: brightness(0) opacity(0.55);
+      object-fit: contain;
+      object-position: center;
     }
 
     .hero-body {
       flex: 1;
       position: relative;
       display: flex;
-      align-items: flex-start;
-      padding-top: 80px;
+      align-items: center;
+      padding-top: 64px;
+      z-index: 2;
     }
 
     .names-wrap {
       position: relative;
-      z-index: 5;
+      z-index: 2;
       padding: 0 0 0 5vw;
-      width: 56%;
+      width: 52%;
       animation: heroFadeUp 1.2s ease both;
     }
 
     .names-wrap svg {
       width: 100%;
       height: auto;
+      max-height: 52vh;
     }
 
     @keyframes heroFadeUp {
-      from { opacity: 0; transform: translateY(32px); }
+      from { opacity: 0; transform: translateY(24px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
     /* ── BOTTOM TEXT & COUNTDOWN ── */
     .hero-bottom {
       position: relative;
-      z-index: 5;
+      z-index: 2;
       text-align: center;
-      padding: 16px 24px 36px;
+      padding: 10px 24px 28px;
       animation: heroFadeUp 1.4s ease 0.3s both;
+      flex-shrink: 0;
     }
 
     .celebrating-line {
@@ -67,14 +75,14 @@
       letter-spacing: 0.3em;
       text-transform: uppercase;
       opacity: 0.65;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .date-line {
-      font-size: clamp(10px, 1.3vw, 13px);
+      font-size: clamp(10px, 1.2vw, 13px);
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      margin-bottom: 24px;
+      margin-bottom: 18px;
       opacity: 0.9;
     }
 
@@ -89,12 +97,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 4px;
+      gap: 3px;
     }
 
     .cd-num {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(26px, 4vw, 36px);
+      font-size: clamp(22px, 3vw, 32px);
       font-weight: 300;
       line-height: 1;
       letter-spacing: 0.04em;
@@ -102,7 +110,7 @@
     }
 
     .cd-lbl {
-      font-size: 8px;
+      font-size: 7px;
       letter-spacing: 0.22em;
       text-transform: uppercase;
       opacity: 0.5;
@@ -110,7 +118,7 @@
 
     .cd-sep {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 28px;
+      font-size: 24px;
       font-weight: 300;
       opacity: 0.3;
       align-self: flex-start;
@@ -119,9 +127,9 @@
     }
 
     @media (max-width: 680px) {
-      .names-wrap { width: 88%; padding-left: 6vw; }
-      .flower-bg { width: 90%; right: -20%; top: 30%; opacity: 0.12; }
-      .hero-body { align-items: center; }
+      .names-wrap { width: 80%; padding-left: 5vw; }
+      .flower-bg { width: 85%; right: -20%; top: auto; bottom: 0; height: 65%; }
+      .hero-body { align-items: flex-end; padding-bottom: 10px; }
     }
   </style>
 </head>
