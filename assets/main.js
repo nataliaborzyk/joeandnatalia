@@ -2,7 +2,7 @@
 const TRANSLATIONS = {
   pl: {
     nav_venue: 'Miejsce ceremonii',
-    nav_travel: 'Noclegi & transport',
+    nav_travel: 'Noclegi i transport',
     nav_faq: 'FAQ',
     nav_rsvp: 'RSVP',
     footer: 'Natalia & Joe · 18 września 2027',
