@@ -246,9 +246,33 @@ footer p {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 680px) {
-  .nav { gap: 20px; padding: 18px 20px; }
-  .nav a { font-size: 9.5px; letter-spacing: 0.15em; }
-  .nav-rsvp { padding: 5px 14px; }
-  .lang-toggle { right: 20px; }
+  .nav {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    padding: 14px 16px 12px;
+    row-gap: 10px;
+  }
+  .nav a {
+    font-size: 9px;
+    letter-spacing: 0.1em;
+  }
+  .nav-rsvp { padding: 5px 12px; }
+  .lang-toggle {
+    position: static;
+    transform: none;
+    order: 10;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2px;
+  }
   .content-block { padding: 24px 20px; }
+}
+
+@media (max-width: 380px) {
+  .nav { gap: 8px 10px; }
+  .nav a { font-size: 8px; }
+}
+
+@media (max-width: 680px) {
+  .page-wrap { padding-top: 86px; }
 }
