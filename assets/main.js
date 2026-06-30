@@ -70,7 +70,7 @@ const TRANSLATIONS = {
     nav_travel: 'Stay & Travel',
     nav_faq: 'FAQ',
     nav_rsvp: 'RSVP',
-    footer: 'Natalia & Joe · September 18th, 2027',
+    footer: 'Natalia & Joe · September 18th, 2027 · IBAN: IT 00 0000 0000 0000 0000',
     // index
     celebrating: 'are celebrating their wedding on',
     date_venue: 'September 18th, 2027 · Zaczarowana Furmanka',
