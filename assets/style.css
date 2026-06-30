@@ -229,6 +229,23 @@ body {
   transform: translateY(0);
 }
 
+/* ── BACK TO HOME ── */
+.back-home {
+  display: block;
+  text-align: center;
+  margin: 12px auto 0;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--green-light);
+  opacity: 0.6;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.25s;
+}
+
+.back-home:hover { opacity: 0.95; }
+
 /* ── FOOTER ── */
 footer {
   text-align: center;

@@ -6,6 +6,7 @@ const TRANSLATIONS = {
     nav_faq: 'FAQ',
     nav_rsvp: 'RSVP',
     footer: 'Natalia & Joe · 18 września 2027',
+    back_home: 'Powrót na stronę główną',
     // index
     celebrating: 'zapraszają na swoje wesele',
     date_venue: '18 września 2027 · Zaczarowana Furmanka',
@@ -16,7 +17,7 @@ const TRANSLATIONS = {
     venue_title: 'Zaczarowana Furmanka',
     venue_intro: 'Antolka, Kraków',
     venue_barn_title: 'Dlaczego to miejsce',
-    venue_barn_body: 'Szczerze mówiąc, nie planowaliśmy wesela i nie szukaliśmy już sali. Po prostu trafiliśmy na Zaczarowaną Furmankę przypadkiem i od razu wiedzieliśmy, że to jest TO miejsce. 💖|||Marzyło nam się wesele bez spiny — luźne, w otoczeniu natury, z dobrą zabawą. Takie, gdzie czasem poleci coś mocniejszego, a czasem muzyka z naszych ulubionych gier. A najważniejsze: żebyśmy ten dzień spędzili z naszymi kochanymi rodzinami i przyjaciółmi. Zaczarowana Furmanka to przytulne, klimatyczne miejsce ze swojską, boho stodołą, idealnie wpasowuje się w to, o czym marzyliśmy.',
+    venue_barn_body: 'Szczerze mówiąc — nie planowaliśmy wesela i nie szukaliśmy już sali. Po prostu trafiliśmy na Zaczarowaną Furmankę przypadkiem i od razu wiedzieliśmy, że to jest TO miejsce. Nie my je znaleźliśmy — to ono nas znalazło.|||Marzyło nam się wesele bez spiny — luźne, w otoczeniu natury, z dobrą zabawą. Takie, gdzie czasem poleci coś mocniejszego, a czasem muzyka z naszych ulubionych gier. A najważniejsze — żebyśmy ten dzień spędzili z naszymi kochanymi rodzinami i przyjaciółmi. Zaczarowana Furmanka to przytulne, klimatyczne miejsce ze swojską, boho stodołą — idealnie wpasowuje się w to, o czym marzyliśmy.',
     venue_dress_title: 'Dress code',
     venue_dress_body: 'Wygoda na pierwszym miejscu, ale to jednak wesele, więc ubierzcie się tak, żebyście czuli się i komfortowo, i obłędnie. 💃|||Ważna informacja dla Pań: nasze wesele odbywa się w stodole, otoczonej polami i naturą. Ceremonia będzie na świeżym powietrzu, a sporo czasu spędzimy na trawie, dlatego z myślą o Waszym komforcie polecamy płaski obcas lub obcas słupek, w szpilkach o tym terenie może być niełatwo. 😉|||Ponieważ wesele odbędzie się w połowie września, warto zabrać ze sobą coś na górę.',
     venue_expect_title: 'Czego się spodziewać',
@@ -71,6 +72,7 @@ const TRANSLATIONS = {
     nav_faq: 'FAQ',
     nav_rsvp: 'RSVP',
     footer: 'Natalia & Joe · September 18th, 2027',
+    back_home: 'Back to home page',
     // index
     celebrating: 'are celebrating their wedding on',
     date_venue: 'September 18th, 2027 · Zaczarowana Furmanka',
@@ -81,7 +83,7 @@ const TRANSLATIONS = {
     venue_title: 'Zaczarowana Furmanka',
     venue_intro: 'Antolka, Cracow',
     venue_barn_title: 'Why this place',
-    venue_barn_body: 'Honestly, we weren\'t even planning a wedding, and we definitely weren\'t looking for a venue. We just stumbled upon Zaczarowana Furmanka by chance, and we instantly knew this was THE place. 💖|||We dreamed of a wedding that felt easy and relaxed, surrounded by nature, full of good fun. The kind where sometimes you\'ll hear something a little wilder on the speakers, and sometimes the soundtrack from our favourite video games. But most importantly: a day spent with our beloved families and friends. Zaczarowana Furmanka is a cosy, atmospheric spot with a charming boho barn, and it fits exactly what we were dreaming of.',
+    venue_barn_body: 'Honestly — we weren\'t even planning a wedding, and we definitely weren\'t looking for a venue. We just stumbled upon Zaczarowana Furmanka by chance, and we instantly knew this was THE place. We didn\'t really find it — it found us.|||We dreamed of a wedding that felt easy and relaxed — surrounded by nature, full of good fun. The kind where sometimes you\'ll hear something a little wilder on the speakers, and sometimes the soundtrack from our favourite video games. But most importantly — a day spent with our beloved families and friends. Zaczarowana Furmanka is a cosy, atmospheric spot with a charming boho barn — and it fits exactly what we were dreaming of.',
     venue_dress_title: 'Dress code',
     venue_dress_body: 'Comfort first, but it\'s a wedding, so dress in a way that makes you feel both comfy and fabulous. 💃|||A note for the ladies: our wedding takes place in a barn, surrounded by fields and nature. The ceremony will be outdoors, and we\'ll be spending a good amount of time on grass, so for your own comfort, we recommend flat shoes or block heels — stilettos won\'t be your friend on this terrain. 😉|||Since the wedding falls in mid-September, it\'s worth bringing something to throw over your shoulders.',
     venue_expect_title: 'What to expect',
