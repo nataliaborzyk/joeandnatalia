@@ -14,7 +14,7 @@ const TRANSLATIONS = {
     // venue
     venue_eyebrow: 'Miejsce ceremonii',
     venue_title: 'Zaczarowana Furmanka',
-    venue_intro: 'Miejsce, gdzie bliskość natury łączy się z sielskim charakterem domostwa, a zaczarowany układ gwiazd sprawia, że marzenia stają się rzeczywistością. Tutaj właśnie powiemy sobie "tak".',
+    venue_intro: 'Antolka, Kraków',
     venue_barn_title: 'Dlaczego to miejsce',
     venue_barn_body: 'Szczerze mówiąc — nie planowaliśmy wesela i nie szukaliśmy już sali. Po prostu trafiliśmy na Zaczarowaną Furmankę przypadkiem i od razu wiedzieliśmy, że to jest TO miejsce. Nie my je znaleźliśmy — to ono nas znalazło.|||Marzyło nam się wesele bez spiny — luźne, w otoczeniu natury, z dobrą zabawą. Takie, gdzie czasem poleci coś mocniejszego, a czasem muzyka z naszych ulubionych gier. A najważniejsze — żebyśmy ten dzień spędzili z naszymi kochanymi rodzinami i przyjaciółmi. Zaczarowana Furmanka to przytulne, klimatyczne miejsce ze swojską, boho stodołą — idealnie wpasowuje się w to, o czym marzyliśmy.',
     venue_dress_title: 'Dress code',
@@ -79,7 +79,7 @@ const TRANSLATIONS = {
     // venue
     venue_eyebrow: 'The ceremony venue',
     venue_title: 'Zaczarowana Furmanka',
-    venue_intro: 'A place where the serenity of nature meets the charm of a rustic homestead, all under the spell of an enchanted constellation of stars. This is where we will say "I do".',
+    venue_intro: 'Antolka, Cracow',
     venue_barn_title: 'Why this place',
     venue_barn_body: 'Honestly — we weren\'t even planning a wedding, and we definitely weren\'t looking for a venue. We just stumbled upon Zaczarowana Furmanka by chance, and we instantly knew this was THE place. We didn\'t really find it — it found us.|||We dreamed of a wedding that felt easy and relaxed — surrounded by nature, full of good fun. The kind where sometimes you\'ll hear something a little wilder on the speakers, and sometimes the soundtrack from our favourite video games. But most importantly — a day spent with our beloved families and friends. Zaczarowana Furmanka is a cosy, atmospheric spot with a charming boho barn — and it fits exactly what we were dreaming of.',
     venue_dress_title: 'Dress code',
