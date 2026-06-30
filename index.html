@@ -127,9 +127,17 @@
     }
 
     @media (max-width: 680px) {
-      .names-wrap { width: 80%; padding-left: 5vw; }
-      .flower-bg { width: 85%; right: -20%; top: auto; bottom: 0; height: 65%; }
-      .hero-body { align-items: flex-end; padding-bottom: 10px; }
+      .hero { height: auto; min-height: 100svh; padding-top: 92px; padding-bottom: 24px; }
+      .hero-body { align-items: center; padding-top: 0; flex: none; }
+      .names-wrap { width: 92%; padding-left: 0; margin: 0 auto; text-align: center; }
+      .names-wrap svg { max-width: 360px; margin: 0 auto; }
+      .flower-bg { width: 130%; right: -25%; left: auto; top: auto; bottom: -4%; height: 50%; opacity: 0.9; }
+      .hero-bottom { padding-top: 24px; }
+      .countdown { gap: 14px; }
+    }
+
+    @media (max-width: 380px) {
+      .names-wrap svg { max-width: 300px; }
     }
   </style>
 </head>
