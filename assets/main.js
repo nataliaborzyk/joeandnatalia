@@ -109,7 +109,7 @@ const TRANSLATIONS = {
     faq_q3: 'Will there be vegetarian options?',
     faq_a3: 'The main menu will be meat-based. For our vegan and vegetarian friends, we\'ve prepared a fully vegan option - just let us know when you fill out the RSVP form. 🙂',
     faq_q4: 'Is there parking at the venue?',
-    faq_a4: 'Yes, free parking is available at the venue! We'\d just ask you to let us know in advance if you're planning to drive — it helps us with the logistics and making sure there'\s a spot for everyone.',
+    faq_a4: 'Yes, free parking is available at the venue! We\'d just ask you to let us know in advance if you\'re planning to drive — it helps us with the logistics and making sure there\'s a spot for everyone.',
     faq_q5: 'What about accommodation for out-of-town guests?',
     faq_a5: 'Check the Stay & Travel page — we have negotiated discounts at nearby hotels.',
     faq_q6: 'What does the day look like?',
