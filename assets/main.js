@@ -48,8 +48,8 @@ const TRANSLATIONS = {
     faq_a5: 'Szczegóły znajdziesz na podstronie Stay & Travel — mamy wynegocjowane zniżki w okolicznych hotelach.',
     faq_q6: 'Jak wygląda program uroczystości?',
     faq_a6: '14:00 — ceremonia w ogrodzie, 15:30 — aperitif i czas na zdjęcia, 17:00 — przyjęcie w stodole, żywa muzyka, zabawa do rana.',
-    faq_q6: 'Czy na miejscu jest WiFi / zasięg?',
-    faq_a6: 'WiFi na miejscu nie ma, a internet mobilny bywa baaaardzo kapryśny. Jesteśmy w samym środku niczego, otoczeni naturą! 🌿',
+    faq_q7: 'Czy na miejscu jest WiFi / zasięg?',
+    faq_a7: 'WiFi na miejscu nie ma, a internet mobilny bywa baaaardzo kapryśny. Jesteśmy w samym środku niczego, otoczeni naturą! 🌿',
     // rsvp
     rsvp_eyebrow: 'Potwierdź obecność',
     rsvp_title: 'Czekamy na Ciebie',
@@ -116,8 +116,8 @@ const TRANSLATIONS = {
     faq_a5: 'Check the Stay & Travel page — we have negotiated discounts at nearby hotels.',
     faq_q6: 'What does the day look like?',
     faq_a6: '2:00 pm — outdoor ceremony, 3:30 pm — aperitif and photos, 5:00 pm — reception in the barn with live music until dawn.',
-    faq_q6: 'What does the day look like?',
-    faq_a6: 'There'\s no WiFi, and mobile data can be veeery fussy. We're in the middle of nowhere, surrounded by nature. 🌿',
+    faq_q7: 'What does the day look like?',
+    faq_a7: 'There'\s no WiFi, and mobile data can be veeery fussy. We're in the middle of nowhere, surrounded by nature. 🌿',
     // rsvp
     rsvp_eyebrow: 'Confirm your attendance',
     rsvp_title: 'We can\'t wait to see you',
