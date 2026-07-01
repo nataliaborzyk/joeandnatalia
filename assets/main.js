@@ -71,7 +71,7 @@ const TRANSLATIONS = {
     nav_travel: 'Stay & Travel',
     nav_faq: 'FAQ',
     nav_rsvp: 'RSVP',
-    footer: 'Natalia & Joe · September 18th, 2027 · IBAN: 00 0000 0000 0000 0000',
+    footer: 'Natalia & Joe · September 18th, 2027 · IBAN: IT00 0000 0000 0000 0000',
     back_home: 'Back to home page',
     // index
     celebrating: 'are celebrating their wedding on',
