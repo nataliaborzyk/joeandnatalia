@@ -23,7 +23,7 @@ const TRANSLATIONS = {
     venue_expect_title: 'Czego się spodziewać',
     venue_expect_body: 'Ceremonia plenerowa w ogrodzie, przyjęcie w stodole, żywa muzyka do późna. Wieczór pełen ciepła, śmiechu i tańca — w scenerii, która sama w sobie jest magiczna. Przygotujcie się na chwile rodem z dziecięcych wspomnień o sielskich wakacjach na wsi.',
     venue_address_title: 'Dojazd',
-    venue_address_body: 'Zaczarowana Furmanka, Małopolska, Antolka, Kraków. W razie pytań: Natalia - +39 351 33 60 331 · Joe: +39 392 17 62 263',
+    venue_address_body: 'Zaczarowana Furmanka, Antolka 44, 32-210 Antolka (okolice Krakowa)|||W razie pytań: Natalia - +39 351 33 60 331 · Joe: +39 392 17 62 263',
     // travel
     travel_eyebrow: 'Noclegi i transport',
     travel_title: 'Zostań z nami dłużej',
@@ -89,7 +89,7 @@ const TRANSLATIONS = {
     venue_expect_title: 'What to expect',
     venue_expect_body: 'An outdoor ceremony in the garden, reception in the barn, and live music until late. An evening full of warmth, laughter and dancing — set in a scene that is magical all on its own. Expect moments that feel like childhood summers in the countryside.',
     venue_address_title: 'Getting there',
-    venue_address_body: 'Zaczarowana Furmanka, Lesser Poland, Antolka, Cracow. Any questions: Joe: +39 392 17 62 263 · Natalia - +39 351 33 60 331',
+    venue_address_body: 'Zaczarowana Furmanka, Antolka 44, 32-210 Antolka, Poland|||Any questions: Joe: +39 392 17 62 263 · Natalia - +39 351 33 60 331',
     // travel
     travel_eyebrow: 'Accommodation & transport',
     travel_title: 'Stay a little longer',
