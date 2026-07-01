@@ -116,8 +116,8 @@ const TRANSLATIONS = {
     faq_a5: 'Check the Stay & Travel page — we have negotiated discounts at nearby hotels.',
     faq_q6: 'What does the day look like?',
     faq_a6: '2:00 pm — outdoor ceremony, 3:30 pm — aperitif and photos, 5:00 pm — reception in the barn with live music until dawn.',
-    faq_q7: 'What does the day look like?',
-    faq_a7: 'There'\s no WiFi, and mobile data can be veeery fussy. We're in the middle of nowhere, surrounded by nature. 🌿',
+    faq_q7: 'Is there WiFi / mobile signal?',
+    faq_a7: 'There\'s no WiFi, and mobile data can be veeery fussy. We\'re in the middle of nowhere, surrounded by nature. 🌿',
     // rsvp
     rsvp_eyebrow: 'Confirm your attendance',
     rsvp_title: 'We can\'t wait to see you',
