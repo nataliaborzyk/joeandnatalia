@@ -35,7 +35,8 @@ const TRANSLATIONS = {
     travel_hotel2_url: 'https://www.hotelzameczek.pl/',
     travel_bus_title: 'Transport',
     travel_bus_body: 'Organizujemy autokar weselny, który zawiezie gości z miejsca uroczystości do obu hoteli. Szczegóły godzin odjazdu podamy bliżej daty wesela. Jeśli planujesz skorzystać z transportu, zaznacz to w formularzu RSVP.',
-    travel_discount_label: 'Kod zniżki',
+    travel_hotel1_badge: '★ dla zwiedzających Kraków',
+    travel_hotel2_badge: '★ blisko miejsca wesela',
     travel_book_link: 'Zarezerwuj na stronie hotelu →',
     travel_rsvp_note: 'Zaznacz chęć skorzystania z transportu w formularzu RSVP.',
     // faq
@@ -105,6 +106,8 @@ const TRANSLATIONS = {
     travel_hotel1_url: 'https://www.hotel-wyspianski.pl/',
     travel_hotel2_title: 'Hotel Zameczek, Książ Wielki',
     travel_hotel2_body: 'A cozy, boutique hotel located just a few kilometers from Zaczarowana Furmanka — a great choice for those who want to stay close to the venue and aren\'t planning to explore Kraków. We\'ve negotiated a 15% discount for you when booking directly through the hotel\'s website with the code.',
+    travel_hotel1_badge: '★ for Kraków explorers',
+    travel_hotel2_badge: '★ close to the venue',
     travel_discount_label: 'Discount code',
     travel_book_link: 'Book on the hotel website →',
     travel_rsvp_note: 'Please let us know in the RSVP form if you\'d like to use the transport.',
