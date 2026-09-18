@@ -25,6 +25,16 @@
       border-bottom: 1px solid rgba(205,217,204,0.3);
       padding-bottom: 2px;
     }
+    .venue-map-wrap {
+      margin-top: 16px;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .venue-map-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -70,6 +80,13 @@
         <div class="map-placeholder">
           <p>Zaczarowana Furmanka · ul. Przykładowa 12, 05-123 Miejscowość</p>
           <a href="https://maps.google.com/?q=Zaczarowana+Furmanka" target="_blank" rel="noopener">Otwórz w Google Maps →</a>
+        </div>
+      </div>
+
+      <div class="content-block fade-in">
+        <h3 data-t="venue_map_title">Odkryj naszą przestrzeń</h3>
+        <div class="venue-map-wrap">
+          <img src="assets/venue-map.png" alt="Mapa terenu Zaczarowanej Furmanki" class="venue-map-img">
         </div>
       </div>
 
